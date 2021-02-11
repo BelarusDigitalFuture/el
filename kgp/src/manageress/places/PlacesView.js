@@ -1,25 +1,17 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import {Col, Container, Form, FormControl, FormGroup, Row} from "react-bootstrap";
-import FormFileInput from "react-bootstrap/FormFileInput";
 import Button from "react-bootstrap/Button";
 
-class KidDetails extends Component {
-
+class PlacesView extends Component {
     render() {
         return <Container><Form>
-            <h1 className='mb-5'>Заявка</h1>
-            <h2 className='mb-5'>Данные о ребенке</h2>
+            <h1 className='mb-5'>Ясли-сад №501</h1>
+            <h2 className='mb-5'>Свободные места в группах</h2>
             <div className='form-row'>
                 <FormGroup className='col-md-6'>
                     <label>
-                        Имя
-                    </label>
-                    <FormControl name='name'/>
-                </FormGroup>
-                <FormGroup className='col-md-6'>
-                    <label>
-                        Фамилия
+                        Ясли
                     </label>
                     <FormControl/>
                 </FormGroup>
@@ -27,7 +19,7 @@ class KidDetails extends Component {
             <div className='form-row'>
                 <FormGroup className='col-md-6'>
                     <label>
-                        Отчество
+                        Младшая группа
                     </label>
                     <FormControl/>
                 </FormGroup>
@@ -35,29 +27,23 @@ class KidDetails extends Component {
             <div className='form-row'>
                 <FormGroup className='col-md-6'>
                     <label>
-                        Дата рождения
+                        Средняя группа
                     </label>
-                    <FormControl type='date'/>
-                </FormGroup>
-                <FormGroup className='col-md-6'>
-                    <label>
-                        Свидетельство о рождении
-                    </label>
-                    <FormFileInput />
+                    <FormControl/>
                 </FormGroup>
             </div>
-            <div className='form-row mb-5'>
+            <div className='form-row'>
                 <FormGroup className='col-md-6'>
                     <label>
-                        Email
+                        Старшая группа
                     </label>
-                    <FormControl type='email'/>
+                    <FormControl/>
                 </FormGroup>
             </div>
             <Row>
                 <Col md={6}>
-                    <Link to="/kindergartens">
-                        <Button className='btn-block'>Дальше</Button>
+                    <Link to="/manageressConfirmation">
+                        <Button className='btn-block'>Обновить</Button>
                     </Link>
                 </Col>
             </Row>
@@ -65,4 +51,4 @@ class KidDetails extends Component {
     }
 }
 
-export default KidDetails;
+export default PlacesView;

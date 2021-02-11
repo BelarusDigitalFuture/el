@@ -4,12 +4,6 @@ import Button from 'react-bootstrap/Button';
 import {Col, Container, Row} from "react-bootstrap";
 
 class Welcome extends Component {
-    constructor() {
-        super();
-        this.state = {
-            name: "React"
-        };
-    }
 
     render() {
         return <Container className='text-center'>
