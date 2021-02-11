@@ -4,6 +4,7 @@ import Welcome from "./Welcome";
 import KidDetails from "./KidDetails";
 import Kindergartens from "./Kindergartens";
 import Confirmation from "./Confirmation";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
