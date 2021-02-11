@@ -10,6 +10,7 @@ import DistributionView from "./admin/distribution/DistributionView";
 import ManageressView from "./manageress/ManageressView";
 import PlacesView from "./manageress/places/PlacesView";
 import ManageressConfirmationView from "./manageress/ManageressConfirmationView";
+import Kindergarten from "./admin/distribution/Kindergarten";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                   <Route path="/confirmation" component={Confirmation} />
                   <Route path="/admin" component={AdminView} />
                   <Route path="/distribution" component={DistributionView} />
+                  <Route path="/kindergarten" component={Kindergarten} />
                   <Route path="/manageress" component={ManageressView} />
                   <Route path="/places" component={PlacesView} />
                   <Route path="/manageressConfirmation" component={ManageressConfirmationView} />
