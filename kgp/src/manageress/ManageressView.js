@@ -7,33 +7,39 @@ class ManageressView extends Component {
 
     render() {
 
-        return <Container><Form>
-            <h1 className='mb-5'>Вход для заведующей</h1>
+        return <Container>
+            <Row className="justify-content-center">
+                <Col className="col-md-6 border border-md-1 m-3 m-md-4 p-3 p-md-4 rounded shadow">
+                    <Form>
+                        <h1 className='mb-5'>Вход для заведующей</h1>
 
-            <div className='form-row'>
-                <FormGroup className='col-md-6'>
-                    <label>
-                        Имя пользователя
-                    </label>
-                    <FormControl/>
-                </FormGroup>
-            </div>
-            <div className='form-row'>
-                <FormGroup className='col-md-6'>
-                    <label>
-                        Пароль
-                    </label>
-                    <FormControl/>
-                </FormGroup>
-            </div>
-            <Row>
-                <Col md={4}>
-                    <Link to="/places">
-                        <Button className='btn-block'>Войти</Button>
-                    </Link>
+                        <FormGroup className='form-group-lg'>
+                            <label>
+                                Имя пользователя
+                            </label>
+                            <FormControl className='form-control-lg'/>
+                        </FormGroup>
+                        <FormGroup className='mb-5'>
+                            <label>
+                                Пароль
+                            </label>
+                            <FormControl className='form-control-lg'/>
+                        </FormGroup>
+                        <Row className='mb-3'>
+                            <Col md={5} className='mb-2'>
+                                <Link to="/places">
+                                    <Button className='btn-block btn-lg'>Войти</Button>
+                                </Link>
+                            </Col>
+                            <Col className='mb-2'>
+                                <a href='#' className='btn btn-block d-md-none btn-lg btn-link text-muted'>Забыла пароль</a>
+                                <a href='#' className='btn d-none d-md-inline-block btn-lg btn-link text-muted'>Забыла пароль</a>
+                            </Col>
+                        </Row>
+                    </Form>
                 </Col>
             </Row>
-        </Form></Container>;
+        </Container>;
     }
 }
 
