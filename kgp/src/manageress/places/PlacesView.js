@@ -19,7 +19,7 @@ class PlacesView extends Component {
             <div className='form-row'>
                 <FormGroup className='col-md-6'>
                     <label>
-                        Младшая группа
+                        Младшие группы
                     </label>
                     <FormControl/>
                 </FormGroup>
@@ -27,7 +27,7 @@ class PlacesView extends Component {
             <div className='form-row'>
                 <FormGroup className='col-md-6'>
                     <label>
-                        Средняя группа
+                        Средние группы
                     </label>
                     <FormControl/>
                 </FormGroup>
@@ -35,7 +35,7 @@ class PlacesView extends Component {
             <div className='form-row'>
                 <FormGroup className='col-md-6'>
                     <label>
-                        Старшая группа
+                        Старшие группы
                     </label>
                     <FormControl/>
                 </FormGroup>
