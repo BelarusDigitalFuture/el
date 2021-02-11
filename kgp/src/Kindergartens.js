@@ -18,6 +18,10 @@ class Kindergartens extends Component {
         return <form>
             <h2>Выберите желаемые сады</h2>
             <KindergartensDropdown/>
+            <KindergartensDropdown/>
+            <KindergartensDropdown/>
+            <KindergartensDropdown/>
+            <KindergartensDropdown/>
             <Link to="/confirmation">Дальше</Link>
         </form>;
     }

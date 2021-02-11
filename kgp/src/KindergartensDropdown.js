@@ -13,10 +13,10 @@ class KindergartensDropdown extends Component {
 
     render() {
         const options = [
-            'one', 'two', 'three'
+            '№501 (10 мест/ 5 заявок)', '№502 (10 мест/ 6 заявок)', '№503 (10 мест/ 0 заявок)'
         ];
         return <div>
-            <Dropdown options={options}/><button>+</button>
+            <Dropdown options={options}/>
         </div>;
     }
 }

@@ -5,6 +5,8 @@ import KidDetails from "./KidDetails";
 import Kindergartens from "./Kindergartens";
 import Confirmation from "./Confirmation";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AdminView from "./AdminView";
+import DistributionView from "./DistributionView";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
                   <Route path="/kidDetails" component={KidDetails} />
                   <Route path="/kindergartens" component={Kindergartens} />
                   <Route path="/confirmation" component={Confirmation} />
+                  <Route path="/admin" component={AdminView} />
+                  <Route path="/distribution" component={DistributionView} />
               </Switch>
           </Router>
       </header>
