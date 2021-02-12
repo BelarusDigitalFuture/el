@@ -7,9 +7,6 @@ import Button from "react-bootstrap/Button";
 class Kindergartens extends Component {
 
     render() {
-        const options = [
-            'one', 'two', 'three'
-        ];
         return <Container><Form>
             <h1 className='mb-5'>Выбор садов</h1>
             <h2 className='mb-5'>Выберите в порядке приоритета</h2>

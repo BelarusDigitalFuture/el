@@ -3,10 +3,16 @@ import {Link} from "react-router-dom";
 import {Col, Container, Form, FormControl, FormGroup, Row} from "react-bootstrap";
 import FormFileInput from "react-bootstrap/FormFileInput";
 import Button from "react-bootstrap/Button";
+import Dropdown from "react-dropdown";
 
 class KidDetails extends Component {
 
     render() {
+
+        const options = [
+            'Русский', 'Беларусский'
+        ];
+
         return <Container><Form>
             <h1 className='mb-5'>Заявка</h1>
             <h2 className='mb-5'>Данные о ребенке</h2>
@@ -52,6 +58,14 @@ class KidDetails extends Component {
                         Email
                     </label>
                     <FormControl type='email'/>
+                </FormGroup>
+            </div>
+            <div className='form-row mb-5'>
+                <FormGroup className='col-md-6'>
+                    <label>
+                        Язык
+                    </label>
+                    <Dropdown options={ options } placeholder="Выберите язык"/>
                 </FormGroup>
             </div>
             <Row>
